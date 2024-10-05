@@ -13,6 +13,23 @@ bool isPrime(int n) {
     return true;
 }
 
+template <typename T> vector<T> getEll(int n){
+    vector<T> v;
+    for(int i=0;i<n;i++){
+        T x;
+        cin>>x;
+        v.push_back(x);
+    }
+    return v;
+}
+
+template <typename T> void display(vector<T> v){
+    for(auto x: v){
+        cout<<x<<" ";
+    }
+    cout<<endl;
+}
+
 void testCase(){
 
 }
@@ -20,9 +37,8 @@ void testCase(){
 int main(){
     ll t;
     cin>>t;
-    while(t>0){
+    while(t--){
         testCase();
-        t--;
     }
     return 0;
 }
