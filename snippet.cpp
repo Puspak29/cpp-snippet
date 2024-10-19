@@ -4,6 +4,7 @@ using namespace std;
 #define mod 1000000007
 #define max LLONG_MAX
 #define min LLONG_MIN
+#define tt template <typename T>
 
 bool isPrime(int n) {
     if (n <= 1) return false;
@@ -13,17 +14,15 @@ bool isPrime(int n) {
     return true;
 }
 
-template <typename T> vector<T> getEll(int n){
-    vector<T> v;
+tt void getEll(vector<T> &v,int n){
     for(int i=0;i<n;i++){
         T x;
         cin>>x;
         v.push_back(x);
     }
-    return v;
 }
 
-template <typename T> void display(vector<T> v){
+tt void display(vector<T> v){
     for(auto x: v){
         cout<<x<<" ";
     }
