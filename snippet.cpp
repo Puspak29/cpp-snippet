@@ -2,8 +2,8 @@
 using namespace std;
 #define ll long long
 #define mod 1000000007
-#define max LLONG_MAX
-#define min LLONG_MIN
+#define maxLL LLONG_MAX
+#define minLL LLONG_MIN
 #define tt template <typename T>
 
 bool isPrime(int n) {
